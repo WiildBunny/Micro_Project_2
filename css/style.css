@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  background-color: #6f6af7;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.left-text {
+  color: #fff;
+  font-family: "Delius Unicase", sans-serif;
+  font-size: 6rem;
+  margin-left: 4.4rem;
+  font-weight: 700;
+}
+
+.mid-text {
+  color: #fff;
+  font-family: "DM sans", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 2.7rem;
+  font-size: 3.5rem;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #9f9f9f;
+  padding: 1rem;
+  font-weight: 400;
+  border-radius: 60px;
+}
+
+.s1 {
+  border: none;
+  outline: 0;
+  font-size: 1.6rem;
+}
+
+.search i {
+  font-size: 1.6rem;
+  color: #9f9f9f;
+}
+
+.menu-icon {
+  font-size: 5rem;
+  color: #fff;
+  margin-right: 3rem;
+}
+
+.section-1 {
+  display: flex;
+  gap: 25rem;
+  padding: 2rem;
+  margin-top: 17rem;
+  margin-left: 13.5rem;
+  background-color: #fff;
+  border-radius: 0.8rem;
+}
+
+.sub-1 {
+  width: 20rem;
+  height: 20rem;
+}
+
+.sub-1 img {
+  width: 40rem;
+  height: 45rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.sub-2 {
+  width: 80rem;
+}
+
+.sub-2 textarea {
+  font-size: 2rem;
+  font-family: "DM sans", sans-serif;
+  color: #6f7373;
+  width: 95%;
+  height: 45rem;
+  padding: 2rem;
+  background-color: #e5d8ff;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  resize: none;
+  overflow: hidden;
+  box-shadow: inset 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.section-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 1.9rem;
+  font-weight: 700;
+  font-family: "DM sans", sans-serif;
+  color: #fff;
+  column-gap: 4rem;
+  padding: 3.2rem 9rem;
+  box-sizing: border-box;
+  margin-left: -57.5rem;
+  margin-top: 8rem;
+  width: 95vw;
+}
+
+.box {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 3.2rem;
+  border-radius: 0.8rem;
+  box-sizing: border-box;
+}
+
+.t1 {
+  background-color: #929dff;
+}
+.t2 {
+  background-color: #734cf2;
+}
+.t3 {
+  background-color: #d288ff;
+}
+.t4 {
+  background-color: #000000;
+}
+
+.section-3 {
+  background-color: #483eff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3.2rem;
+  height: 80vh;
+  width: 83.5vw;
+  padding: 2rem;
+  margin-top: 8rem;
+  margin-left: -48.5rem;
+  border-radius: 1.6rem;
+}
+
+.left {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 4rem;
+  font-family: "DM sans", sans-serif;
+  padding: 4rem 2.5rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.cred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+
+  border: 2px solid #fff;
+  border-radius: 1.6rem;
+}
+
+.active {
+  background-color: #bce0f6;
+  color: #000;
+  border: none;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.right {
+  background-color: white;
+
+  padding: 4rem;
+  border-radius: 1.6rem;
+  position: relative;
+}
+
+.right ul {
+  font-size: 3rem;
+  gap: 3rem;
+  list-style: none;
+}
+
+.r1 {
+  margin-top: 3rem;
+  margin-left: 4.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.next-btn {
+  position: absolute;
+  right: 4rem;
+  bottom: 4rem;
+  font-family: "Roboto", sans-serif;
+
+  padding: 0.6rem 1.9rem;
+  font-size: 2.2rem;
+  background-color: #000;
+  color: white;
+  border: 4px solid #000;
+}
+
+.support-icon {
+  position: fixed;
+  bottom: 2rem;
+  right: 10rem;
+  width: 6rem;
+  height: 6rem;
+  z-index: 100;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-icon img {
+  width: 150%;
+  height: 160%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sticky-icons {
+  position: sticky;
+  top: 12rem;
+  
+  z-index: 100;
+  gap: 1rem;
+  margin-top: -30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky-icons li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  width: 8rem;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 1.6rem;
+  margin-left: 82rem;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .left-text {
+    font-size: 2rem;
+  }
+
+  .mid-text {
+    display: none;
+  }
+
+  .menu-icon {
+    font-size: 2rem;
+  }
+
+  .section-1 {
+    margin-top: 4rem;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .sub-1 img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+  }
+
+  .sub-2 textarea {
+    width: 100%;
+    height: 60%;
+    padding: 1rem;
+  }
+
+  .section-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .box {
+    gap: 1rem;
+    padding: 1.4rem;
+  }
+
+  .section-3 {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .left {
+    width: 100%;
+    height: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 0;
+
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .cred {
+    font-weight: 500;
+    border: 2px solid #fff;
+    padding: 0.4rem;
+  }
+
+  .active {
+    background-color: #bce0f6;
+    color: #000;
+    border: none;
+    box-shadow: var(--box-shadow);
+  }
+
+  .info-panel {
+    width: 100%;
+    height: 90%;
+    padding: 1rem;
+  }
+
+  .right ul {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+
+  .next-btn {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+  }
+
+  .support-icon {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .sticky-icons {
+    position: fixed;
+    top: 50%;
+    float: right;
+    right: 10px;
+    z-index: 10;
+    gap: 0.2rem;
+  }
+
+  .sticky-icons li {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.2rem;
+  }
+
+  .sticky-icons img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
+}
